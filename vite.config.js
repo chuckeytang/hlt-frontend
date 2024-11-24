@@ -45,7 +45,9 @@ export default defineConfig(({ mode, command }) => {
         "/dev-api": {
           target: "https://localhost:18443",
           changeOrigin: true,
-          rewrite: (p) => p.replace(/^\/dev-api/, ""),
+          rewrite: (p) => {
+            return p;
+          },
           secure: false,
         },
       },

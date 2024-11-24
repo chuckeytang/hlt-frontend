@@ -84,19 +84,18 @@ export const constantRoutes = [
       },
     ],
   },
-  {
-    path: "/dashboard",
-    component: Layout,
-    children: [
-      {
-        path: "index",
-        component: () =>
-          import("@/dashboard/views/PartyMemberArchive/index.vue"),
-        name: "Dashboard",
-        meta: { title: "驾驶舱", icon: "dashboard", affix: true },
-      },
-    ],
-  },
+  // {
+  //   path: "/dashboard",
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: "index",
+  //       component: () => import("@/dashboard/views/Home/index.vue"),
+  //       name: "Dashboard",
+  //       meta: { title: "驾驶舱", icon: "dashboard", affix: true },
+  //     },
+  //   ],
+  // },
 ];
 
 // 动态路由，基于用户权限动态去加载
